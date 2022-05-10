@@ -6,15 +6,17 @@
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
     line-height: 1.5;
-    padding: 10px;
-    background: #f1f1f1;
+    padding: 0;
+    margin: 0;
+    background-color: #34D5E0;
+    background-image: linear-gradient(to right bottom, #335e61, #2f5e61, #2a5e61, #255d61, #1f5d61, #1f666b, #1e6f75, #1d787f, #238e96, #28a5ae, #2ebdc7, #34d5e0);
   }
   
   /* Titulo */
   .header {
     padding: 30px;
     text-align: center;
-    background: rgb(255, 255, 255);
+    background: transparent;
   }
   
   .header h1 {
@@ -57,20 +59,35 @@
   .rightcolumn {
     float: left;
     width: 25%;
-    background-color: #f1f1f1;
+    background-color: transparent;
     padding-left: 20px;
   }
   
   /* Imagen */
   .imagen {
+    height: auto;
     background-color: #aaa;
     width: 100%;
     padding: 20px;
   }
 
-  img{
+  .imagen img {
     width: 100%;
-    height: 160px;
+    height: auto;
+  }
+
+  .img{
+    width: 100%;
+    height: auto;
+  }
+
+  .img2{
+    width: 100%;
+    height: 100%;
+  }
+
+  .logo{
+    width: 20%;
   }
   
   /* Efectos para los articulos */
@@ -78,6 +95,21 @@
     background-color: white;
     padding: 20px;
     margin-top: 20px;
+  }
+  
+  .card a{
+    width: 20%;
+    display: inline-flex;
+    justify-content: space-between;
+    align-content: center;
+  }
+
+  .card a:hover{
+    opacity: 0.5;
+  }
+
+  .card a img{
+    width: 100%;
   }
   
   /* Limpia los floats despues de las columnas */
@@ -91,7 +123,7 @@
   .footer {
     padding: 20px;
     text-align: center;
-    background: #ddd;
+    background: rgba(0, 0, 0, 0.158);
     margin-top: 20px;
   }
   
@@ -108,5 +140,69 @@
     .topnav a {
       float: none;
       width: 100%;
+    }
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+  
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
     }
   }
