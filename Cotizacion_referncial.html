@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Pozos Pehuenco</title>
+</head>
+
+<body>
+    <div class="header">
+      <h1>
+        <a href="Inicio.html">Pozos Pehuenco</a>
+      </h1>   
+    </div>
+    <div class="topnav">
+      <div class="hamburger-menu">
+        <input id="menu__toggle" type="checkbox" />
+        <label class="menu__btn" for="menu__toggle">
+          <span></span>
+        </label>
+        <ul class="menu__box">
+          <li><a class="menu__item" href="Inicio.html">Inicio</a></li>
+          <li><a class="menu__item" href="#">Perfil</a></li>
+          <li><a class="menu__item" href="Cotizacion_referncial.html">Cotizaciones</a></li>
+          <li><a class="menu__item" href="#">Mis Proyectos</a></li>
+          <li><a class="menu__item" href="Acerca.html ">Acerca</a></li>
+          <li><a class="menu__item" href="Socios.html">Socios</a></li>
+          <li>
+            <div class="login-menu">
+              <h3>Login Usuario</h3>
+              <form action="">
+                <label for="">Usuario</label>
+                <input type="text" name="" id="" placeholder="Ingrese usuario">
+                <label for="">Contraseña</label>
+                <input type="text" name="" id="" placeholder="Ingrese contraseña">
+                <button>Iniciar sesión</button>
+                <a href="#">Recuperar contraseña</a>
+                <button type="button">
+                  <a href="Registro_base.html">
+                    Registrarse
+                  </a>
+                </button>
+              </form>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="">
+        <div class="card">
+          <h2>Cotizaciones Referenciales</h2>
+          <div class="Container">
+            <form action="/action_page.php">
+              <div class="col-25a">
+                <label for="Estzona">Estudio de la zona: $$$$</label>
+              </div>
+              <div class="col-25a">
+                <label for="Mate">Coste de Materiales: $$$$</label>
+              </div>
+              <div class="col-25a">
+                <label for="bomba">Precio de la Bomba: $$$$</label>
+              </div>
+              <div class="col-25a">
+                <label for="obra">Precio de la Mano de obra: $$$$</label>
+              </div>
+              <label for="localidad">Elija localidad mas cercana:</label>
+              <select name="localidad" id="localidad">
+                <option value="Villarrica">Villarrica:  $$$$</option>
+                <option value="Tolten">Tolten:          $$$$</option>
+                <option value="Temuco">Temuco:          $$$$</option>
+                <option value="Freire">Freire:          $$$$</option>
+                <option value="Cunco">Cunco:            $$$$</option>
+                <option value="melipeuco">Melipeuco:    $$$$</option>
+                <option value="carahue">Carahue:        $$$$</option>
+                <option value="pucon">Pucon:            $$$$</option>
+                <option value="curarrehue">Curarrehue:  $$$$</option>
+                <option value="loncoche">Loncoche:      $$$$</option>
+                <option value="quepe">Quepe:            $$$$</option>
+              </select>
+              <br><br>
+              <button type="button">
+                <a href="#Popup">
+                  Generar Cotizacion
+                </a>
+                <div id="popup" class="overlay">
+                  <div id="popupbody">
+                    <h2>Desea Guardar su Cotizacion</h2>
+                    <a id="cerrar" href="#">&times;</a>
+                    <div class="popupContent">
+                      <p>Generar PDF</p>
+                      <button class="button">
+                        <a href="Inicio.html">
+                          Guardar Cotizacion en Proyecto
+                        </a>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <h2>Copyright 2022 Pozos Profundos Pehuenco</h2>
+    </div>
+</html>
