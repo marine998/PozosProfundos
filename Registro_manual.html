@@ -1,25 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<!--Cliente-->
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="main.css">
-  <title>Pozos Profundos Pehuenco</title>
+  <title>Pozos Pehuenco</title>
 </head>
 
 <body>
   <div class="header">
-    <h1>Pozos Profundos Pehuenco</h1>
-  </div>
-
-  <div class="topnav">
-
-    <a href="home.html">Inicio</a>
-    <a href="#" style="float:right">Link</a>
-    <a href="QuienesSomos.html" style="float: right">Quienes Somos</a>
-    <a href="register.html" style="float:right">Registro</a>
+    <a href="Inicio.html">
+      <h1>Pozos Pehuenco</h1>
+    </a>  
   </div>
 
   <div class="row">
@@ -62,32 +56,38 @@
             </div>
             <div class="row">
               <div class="col-25">
-                <label for="nphone">Correo electr&oacute;nico</label>
-              </div>
-              <div class="col-75">
-                <input type="text" id="pemail" name="email" placeholder="Correo electr&oacute;nico..">
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-25">
                 <label for="nphone">Contrase&ntilde;a</label>
               </div>
               <div class="col-75">
                 <input type="text" id="pass" name="password" placeholder="Contrase&ntilde;a..">
               </div>
             </div>
-            <br>
             <div class="row">
-              <input type="submit" value="Registrarse">
+              <div class="col-25">
+                <label for="comuna">Comuna</label>
+              </div>
+              <div class="col-75">
+                <input type="text" id="comun" name="comuna" placeholder="Comuna..">
+              </div>
             </div>
+            <div class="row">
+              <div class="col-25">
+                <label for="region">Region</label>
+              </div>
+              <div class="col-75">
+                <input type="text" id="region" name="region" placeholder="Region..">
+              </div>
+            </div>
+            <br>
+            <button type="button">
+              <a href="Inicio.html">
+                Registrate
+              </a>
+            </button>
           </form>
         </div>
       </div>
     </div>
-  </div>
-
-  <div class="footer">
-    <h2>Copyright 2022 Pozos Profundos Pehuenco</h2>
   </div>
 </body>
 
