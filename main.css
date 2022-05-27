@@ -442,3 +442,30 @@
     background-color: #555;
     color: white;
   }
+
+  /* css perfil cliente */
+  .table-profile-data {
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 70%;
+    border: 1px solid #000;
+    background-color: white;
+  }
+
+  th, td {
+    border: 1px solid black;
+  }
+
+  .image-profile {
+    width: 10%;
+  }
+
+  .button-profile {
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 25%;
+  }
+
+  .td-tr-profile {
+    border: none;
+  }
